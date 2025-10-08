@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Turret+Road:wght@200;300;400;500;700;800&display=swap"
+  rel="stylesheet">
+
+  <title>Gallery | Singularity</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Gallery | Singularity</h1>
+
+    <section class="intro">
+      <div class="intro-box">
+        <h2>Welcome to the Singularity Gallery</h2>
+        <p>
+          Explore moments from Astrophotography, Events, and Behind The Scenes.
+        </p>
+      </div>
+    </section>
+
+    <section class="main-content">
+      <nav class="category-nav">
+        <ul>
+          <li data-category="astrophotography" class="active">Astrophotography</li>
+          <li data-category="events">Events</li>
+          <li data-category="behind-the-scenes">Behind The Scenes</li>
+        </ul>
+      </nav>
+
+      <nav class="year-nav" id="yearNav"></nav>
+
+      <section class="gallery-section">
+        <div class="gallery-cards" id="galleryContainer"></div>
+      </section>
+    </section>
+  </main>
+
+  <div class="image-modal" id="imageModal">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <span class="nav-btn prev" id="prevBtn">&#10094;</span>
+    <img class="modal-content" id="modalImage">
+    <span class="nav-btn next" id="nextBtn">&#10095;</span>
+    <div class="modal-caption" id="modalCaption"></div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
